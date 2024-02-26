@@ -1,0 +1,39 @@
+.print-body{
+    width: 100%;
+    height:calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.print-body .printer{
+    background-color: #F5F5F5;
+    border-radius: 50%;
+}
+.printer span{
+    font-size: 120px;
+    color: #9E9E9E;
+    padding: 60px;
+}
+.print-body p{
+    font-size: 30px;
+    color: #9E9E9E;
+}
+.print-body button{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #9E9E9E;
+    font-size: 15px;
+}
+.print-body button:hover{
+    background-color: #4CB050;
+    color: white;
+}
+
+@media only screen and (max-width: 400px) {
+    .print-body p{
+        font-size: 20px;
+    }
+  }

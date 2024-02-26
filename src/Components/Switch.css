@@ -1,0 +1,41 @@
+.switch{
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 10px;
+    
+}
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #D8E9C9;
+    border-radius: 25px;
+}
+.slider::before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 0px;
+    bottom: -5px;
+    background-color: #79B041; 
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .slider{
+    background-color: #D8E9C9;
+}
+
+input:checked + .slider::before{
+    transform: translateX(10px);
+}

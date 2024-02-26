@@ -1,0 +1,84 @@
+form{
+    margin: 0px 20%;
+    height:calc(100vh - 100px); 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+    
+}
+input{
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    border-bottom: 1px solid #9E9E9E;
+    font-size: 20px;
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    font-size: 20px;
+}
+.select-div label{
+    font-size: 15px;
+    color: #9E9E9E;
+}
+select{
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    border-bottom: 1px solid #9E9E9E;
+    font-size: 17px;
+}
+.select:focus{
+    outline: none;
+}
+
+.check-div{
+    width: 100%;
+    height: max-content;
+
+}
+.checkOption{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.print-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: none;
+    border-top: 1px solid #9E9E9E;
+    border-bottom: 1px solid #9E9E9E;
+    background-color: white;
+    column-gap: 10px;
+    box-shadow: 1px 0px 13px 2px rgba(0,0,0,0.39);
+-webkit-box-shadow: 1px 0px 13px 2px rgba(0,0,0,0.39);
+-moz-box-shadow: 1px 0px 13px 2px rgba(0,0,0,0.39);
+cursor: pointer;
+}
+.save-btn{
+    padding: 15px;
+    border: none;
+    border-top: 1px solid #9E9E9E;
+    border-bottom: 1px solid #9E9E9E;
+    background-color: white;
+    cursor: pointer;
+}
+.save-btn:hover{
+    background-color: #79B041;
+    color: white;
+}
+
+@media only screen and (max-width: 650px) {
+    form{
+        margin: 0px 0px;
+        padding: 0px 10px;
+        width: 100%;
+    }
+  }
